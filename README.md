@@ -45,14 +45,14 @@ Here are some of the projects I've worked on. For more details, please click on 
 * **[Semester Thesis - Self Sensing Robot Link](./projects/self-sensing-robot-link.md)**: Designing and prototyping a novel robotic link with integrated force-sensing capabilities.
 * **[Bachelor Thesis - Novel Locking Ball Joint](./projects/novel-locking-ball-joint.md)**: Conceptualized, designed, and prototyped a novel locking ball joint for advanced robotics applications.
 * **[Master Project - Single-view animal reconstruction](./projects/single-view-animal-reconstruction.md)**: Tasked with reconstructing 3D dog meshes from a single monocular image by enhancing an existing model.
-* **[Master Project - Human mesh recovery from egocentric depth images](./projects-human-mesh-recovery.md)**: Improved an existing pose detection framework by replacing its ResNet backbone with the more advanced ConvNeXt architecture.
+* **[Master Project - Human mesh recovery from egocentric depth images](./projects/human-mesh-recovery.md)**: Improved an existing pose detection framework by replacing its ResNet backbone with the more advanced ConvNeXt architecture.
 * **[Master Project - Idle speed control system of an engine](./projects/idle-speed-control-system.md)**: Engineered a comprehensive engine dynamics model using MATLAB and Simulink for idle speed control analysis.
 
 ---
 
 ## 💼 Experience
 
-* **ARIS - Engine Testbench CAD and FEM designer** (Oct. 2024 - Present)
-* **Bastli - ETH Workshop Manager** (Sep. 2023 - Present)
-* **General Turbo - Turbine maintenance and testing intern** (Feb. 2022 - Mar. 2022)
-* **Kremsmüller - Industrial valve maintenance and assembly intern** (Feb. 2017 - Mar. 2017)
+* **[ARIS](https://aris-space.ch/) - Engine Testbench CAD and FEM designer** (Oct. 2024 - Present)
+* **[Bastli](https://bastli.ethz.ch/) - ETH Workshop Manager** (Sep. 2023 - Present)
+* **[General Turbo](https://generalturbo.eu/) - Turbine maintenance and testing intern** (Feb. 2022 - Mar. 2022)
+* **[Kremsmüller](https://www.kremsmueller.com/) - Industrial valve maintenance and assembly intern** (Feb. 2017 - Mar. 2017)
