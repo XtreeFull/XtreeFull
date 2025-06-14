@@ -4,25 +4,26 @@ This project, my semester thesis at ETH Zurich, involved the complete design, fa
 
 ### Core Design
 
-<table align="center">
-  <tr>
-    <td align="center" width="33%">
-      <img src="../images/Tube_View.png" alt="Full CAD model of the sensor" width="95%">
-      <br>
-      <em>Full CAD model of the sensor assembly.</em>
-    </td>
-    <td align="center" width="33%">
-      <img src="../images/Components.jpg" alt="Schematic of the sensor components" width="95%">
-      <br>
-      <em>Conceptual schematic of the core components.</em>
-    </td>
-    <td align="center" width="33%">
-      <img src="../images/Down_The_Tube.png" alt="Top-down view of the internal markers" width="95%">
-      <br>
-      <em>Top-down view showing the internal marker arrangement.</em>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table style="width:50%">
+    <tr>
+      <td align="center" width="45%" valign="top">
+        <img src="../images/Components.jpg" alt="Schematic of the sensor components" width="100%">
+        <br>
+        <em>Conceptual schematic of the core components.</em>
+        <br><br>
+        <img src="../images/Down_The_Tube.png" alt="Top-down view of the internal markers" width="100%">
+        <br>
+        <em>Top-down view showing the internal marker arrangement.</em>
+      </td>
+      <td align="center" width="55%" valign="top">
+        <img src="../images/Tube_View.png" alt="Full CAD model of the sensor" width="100%">
+        <br>
+        <em>Full CAD model of the sensor assembly.</em>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -38,8 +39,8 @@ I developed a durable and scalable solution called the "Self-Sensing Robot Link.
 
 My core contribution was to **design and implement the entire computer vision pipeline using Python and OpenCV**. This software tracks the displacement of the markers in real-time to determine the location and nature of the contact force.
 
-![Real-time marker tracking with OpenCV](https://placehold.co/800x450/2d3748/ffffff?text=Live+Camera+Feed+with+Tracking)
-> *Image Description: A screenshot of the live camera feed from inside the sensor. The image shows the OpenCV software successfully identifying and tracking the colored markers with bounding boxes as forces are applied.*
+![Real-time tracking of pressure applied between sensor pegs](../assets/Inbetween_Pressure.gif)
+> *GIF Description: A demonstration of the sensor's ability to detect and localize pressure applied to the membrane in between the primary marker locations. This highlights the system's spatial resolution and its capability to interpret complex contact scenarios.*
 
 ---
 
