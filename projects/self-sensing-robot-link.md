@@ -53,8 +53,8 @@ My core contribution was to **design and implement the entire computer vision pi
 * **Validated the design's scalability** by successfully creating and testing a version scaled down to the 32mm diameter of an ANYmal robot leg, proving the fabrication method is adaptable to different form factors.
 * **Designed and fabricated all mechanical components**, including a modular assembly jig and custom tools, to ensure precise and repeatable construction.
 
-![Experimental validation setup](https://placehold.co/800x400/2d3748/ffffff?text=Test+Probes+and+Setup)
-> *Image Description: An image displaying the custom 3D-printed probes (wedge, ball-head, flat heads) used to apply controlled normal and shear forces during experimental validation.*
+![A selection of the 3D-printed probes used for validation](../images/Probes.png)
+> *Image Description: The custom 3D-printed probes used for experimental validation. From left to right: a wedge for edge contact, a pebble-shaped probe, and two flat heads for distributed pressure.*
 
 ---
 
