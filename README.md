@@ -1,7 +1,7 @@
 # Razvan Coltan's Portfolio
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/your-repo-name/main/images/Profile_Picture.jpeg" alt="Razvan Coltan" width="200" style="border-radius:50%;"/>
+  <img src="https://raw.githubusercontent.com/your-github-username/your-repo-name/main/images/Profile_Picture.jpeg" alt="Razvan Coltan" width="200" style="border-radius:50%;"/>
 </p>
 
 Welcome to my portfolio! I am a passionate and driven Mechatronics Engineer currently pursuing my Master's degree at ETH Zurich 🎓. My interests lie in robotics, control systems, and the application of machine learning to solve complex engineering problems.
@@ -23,7 +23,7 @@ I am a highly motivated Mechatronics Engineer with a strong foundation in mechan
 
 ### Technical Skills
 
-* **CAD:** Siemens NX, SolidWorks, Onshape, Autodesk Fusion, Microstation
+* **[CAD](https://github.com/your-github-username/CAD-Portfolio):** Siemens NX, SolidWorks, Onshape, Autodesk Fusion, Microstation
 * **FEM:** Siemens NX, Abaqus
 * **Simulation:** Simulink, MATLAB
 * **Hardware:** 3D Printing, Rapid Prototyping, PCB Design (KiCad), Micro-electronics
