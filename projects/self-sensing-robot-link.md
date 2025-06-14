@@ -2,8 +2,27 @@
 
 This project, my semester thesis at ETH Zurich, involved the complete design, fabrication, and validation of a novel, large-area tactile sensor for robotic limbs. The goal was to give robots a sophisticated sense of touch, similar to human skin, using a robust, vision-based approach.
 
-![Conceptual design of the self-sensing robot link](https://placehold.co/800x400/2d3748/ffffff?text=Conceptual+Diagram+of+Sensor)
-> *Image Description: A diagram showing the cross-section of the robotic link, illustrating the core components: the outer membrane, internal markers (pegs), compliant foam, and the inner rigid structure.*
+### Core Design
+
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="../images/Tube_View.png" alt="Full CAD model of the sensor" width="95%">
+      <br>
+      <em>Full CAD model of the sensor assembly.</em>
+    </td>
+    <td align="center" width="33%">
+      <img src="../images/Components.jpg" alt="Schematic of the sensor components" width="95%">
+      <br>
+      <em>Conceptual schematic of the core components.</em>
+    </td>
+    <td align="center" width="33%">
+      <img src="../images/Down_The_Tube.png" alt="Top-down view of the internal markers" width="95%">
+      <br>
+      <em>Top-down view showing the internal marker arrangement.</em>
+    </td>
+  </tr>
+</table>
 
 ---
 
