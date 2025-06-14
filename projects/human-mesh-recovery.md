@@ -15,10 +15,27 @@ My primary role was to **research and validate the replacement of the model's co
 I also took the lead in communicating our team's achievements by **authoring the comprehensive final report**, ensuring our methodology, experiments, and conclusions were documented clearly for the academic community.
 
 <div align="center">
-  <img src="../images/hmr_comparison.png" alt="Qualitative comparison of baseline vs. our model" width="80%">
+  <img src="../images/egobody_release_egocentric_depth_processed_recording_20210929_S05_S16_04_2021-09-29-172403_depth_img_132774027193954176.png_comparison.png" alt="Qualitative comparison showing a low error case" width="90%">
+  <br>
+  <em>Our model delivering an accurate pose (109.0mm error).</em>
+  <br><br>
+  <img src="../images/egobody_release_egocentric_depth_processed_recording_20210921_S05_S12_02_2021-09-21-172250_depth_img_132767114182073731.png_comparison.png" alt="Qualitative comparison showing a higher error case" width="90%">
+  <br>
+  <em>Our model handling a challenging, unusual pose (193.8mm error).</em>
 </div>
+<br>
 
-> *Image Description: A qualitative comparison showing the baseline model's prediction (top) versus our enhanced model's (bottom). Our model generates a more expressive and accurate pose, reducing the mean vertex error from 158.1mm to 109.0mm on this challenging example.*
+> *Image Description: Qualitative results showing our enhanced model's predictions on various challenging poses.*
+
+---
+
+### Training & Convergence Analysis
+
+A key finding from my research was the dramatic improvement in training efficiency. As shown by the validation loss curves, our ConvNeXt-based models converged significantly faster (around epoch 40-50) and more stably than the original ResNet baseline, which struggled to converge even after 100 epochs. This highlights the superior learning dynamics of the modern architecture.
+
+<div align="center">
+  <img src="../images/ValidationLosses.png" alt="Validation Loss per Epoch" width="80%">
+</div>
 
 ---
 
@@ -30,11 +47,38 @@ I also took the lead in communicating our team's achievements by **authoring the
 * **Enhanced model stability**, re-enabling and validating a discriminator with adversarial loss, which encouraged more realistic human poses and measurably improved results.
 * **Conducted deep failure analysis**, identifying that the model's primary limitation was not the architecture but a hardcoded cropping step in the data pipeline, demonstrating a thorough understanding of the entire system.
 
-<div align="center">
-  <img src="../images/hmr_failure_case.png" alt="Analysis of a model failure case" width="70%">
-</div>
+### Ablation Study: Component Impact
 
-> *Image Description: An example of our failure case analysis. Both the baseline and our model failed to reconstruct a seated person, defaulting to a standing pose. My analysis traced this error back to a flawed data preprocessing step, highlighting a key area for future improvement.*
+The following table breaks down the impact of each architectural change made during the project. The results clearly show that while each component contributed, the **introduction of the pre-trained ConvNeXt backbone provided the most significant leap in performance** across all metrics.
+
+| Model           | G-MPJPE ↓ | MPJPE ↓ | PA-MPJPE ↓ | V2V ↓ |
+| :-------------- | :-------: | :-----: | :--------: | :---: |
+| Baseline        |   126.2   |  85.9   |    58.6    | 103.2 |
+| +Adv            |   118.1   |  82.4   |    57.3    | 98.8  |
+| **+ConvNeXt** |  **87.4** |**65.7** |  **48.6** |**75.6**|
+| +Diffusion      |   85.6    |  65.7   |    46.9    | 80.0  |
+| +FlowMatching   |   87.7    |  65.3   |    48.2    | 76.2  |
+
+---
+
+### Failure Case Analysis
+
+<table align="center" style="width:100%; border:none;">
+  <tr>
+    <td align="center" width="50%">
+      <img src="../images/failure_case_baseline.png" alt="Baseline model failure case" width="100%">
+      <br>
+      <em>Baseline Model Failure (490.6mm Error)</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="../images/failure_case_ours.png" alt="Our model failure case" width="100%">
+      <br>
+      <em>Our Model Failure (243.1mm Error)</em>
+    </td>
+  </tr>
+</table>
+
+> *Image Description: An example of our failure case analysis. Both the baseline (left) and our model (right) failed to reconstruct a seated person, defaulting to a standing pose. My analysis traced this error back to a flawed data preprocessing step, highlighting a key area for future improvement.*
 
 ---
 
