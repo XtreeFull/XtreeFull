@@ -23,7 +23,7 @@ I am a highly motivated Mechatronics Engineer with a strong foundation in mechan
 
 ### Technical Skills
 
-* **[CAD](https://github.com/your-github-username/CAD-Portfolio):** Siemens NX, SolidWorks, Onshape, Autodesk Fusion, Microstation
+* **[CAD](./Gallery/CAD-Portfolio.md):** Siemens NX, SolidWorks, Onshape, Autodesk Fusion, Microstation
 * **FEM:** Siemens NX, Abaqus
 * **Simulation:** Simulink, MATLAB
 * **Hardware:** 3D Printing, Rapid Prototyping, PCB Design (KiCad), Micro-electronics
