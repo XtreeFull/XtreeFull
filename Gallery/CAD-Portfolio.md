@@ -73,7 +73,7 @@ For this academic project, I chose to model my school's amphitheater, a complex 
 
 As an early design project, I modeled the Lockheed F-117 Nighthawk. After accurately recreating the aircraft's iconic exterior geometry, I expanded the project's scope to include detailed modeling of its internal structures and mechanical components, demonstrating a commitment to thoroughness and detail.
 
-![Image of the F-117 Nighthawk Model](images/In Bewegung.png)
+![Image of the Locking Ball Joint](images/In_Bewegung.png)
 
 **Software Used:** Bently Microstation
 
