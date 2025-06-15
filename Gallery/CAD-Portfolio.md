@@ -9,7 +9,7 @@ This gallery showcases a selection of my mechanical design and CAD projects, dem
 
 As my Master's semester thesis, I designed and prototyped a self-sensing robot link capable of detecting both normal and shear forces. The design was optimized for FDM 3D printing and utilizes an internal vision system with dual-color markers to interpret the applied forces in real-time.
 
-![Image of the Self-Sensing Robot Link](images/Self_Sensing_Robot_Link.png)
+![Image of the Self-Sensing Robot Link](images/Self`_Sensing_Robot_Link.png)
 
 **Software Used:** Autodesk Fusion 360
 
@@ -56,10 +56,10 @@ For this academic project, I chose to model my school's amphitheater, a complex 
 <table width="100%" style="border:none;">
   <tr>
     <td width="50%">
-      <img src="images/VorneBesser.png" alt="Amphitheater front view" width="100%">
+      <img src="images/VorneBesser.jpg" alt="Amphitheater front view" width="100%">
     </td>
     <td width="50%">
-      <img src="images/Ecke.png" alt="Amphitheater corner detail view" width="100%">
+      <img src="images/Ecke.jpg" alt="Amphitheater corner detail view" width="100%">
     </td>
   </tr>
 </table>
