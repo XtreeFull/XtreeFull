@@ -20,7 +20,7 @@ Modern engines use very low idle speeds (around 700 rpm) to minimize fuel consum
 
 As part of a small team, I followed a structured, four-milestone process to develop the controller from first principles.
 
-1.  **Mathematical Modeling:** First, I developed a comprehensive mathematical model of the engine in MATLAB & Simulink. This involved creating dynamic models for all key subsystems, including the throttle body, intake manifold, engine torque generation, and rotational inertia, based on physical equations.
+1.  **Mathematical Modeling:** First, I developed a comprehensive mathematical model of the engine in MATLAB & Simulink. [cite_start]This involved creating dynamic models for all key subsystems, including the throttle body, intake manifold, engine torque generation, and rotational inertia, based on physical equations. 
 
 <div align="center">
   <img src="../images/Torque.png" alt="Detailed view of the Engine Torque Generation sub-model" width="90%">
@@ -28,7 +28,7 @@ As part of a small team, I followed a structured, four-milestone process to deve
 
 > *Image Description: A detailed look inside the Engine Torque Generation subsystem, implementing the Willans approximation and accounting for ignition timing delays.*
 
-2.  **Parameter Identification:** Using real-world measurement data from a physical engine test bench, I performed system identification to calibrate the model. This involved using both linear least-squares methods and nonlinear optimization (`fminsearch`) to accurately determine unknown parameters like engine inertia, thermodynamic efficiencies, and intake manifold volume. The success of this phase is demonstrated by the close match between our simulated model and the measured engine data.
+2.  [cite_start]**Parameter Identification:** Using real-world measurement data from a physical engine test bench, I performed system identification to calibrate the model.  [cite_start]This involved using both linear least-squares methods and nonlinear optimization (`fminsearch`) to accurately determine unknown parameters like engine inertia, thermodynamic efficiencies, and intake manifold volume.  [cite_start]The success of this phase is demonstrated by the close match between our simulated model and the measured engine data. 
 
 <div align="center">
   <img src="../images/Reference_VS_Simulated.png" alt="Plot comparing simulated vs. measured engine data" width="80%">
@@ -36,9 +36,9 @@ As part of a small team, I followed a structured, four-milestone process to deve
 
 > *Image Description: A comparison plot showing the strong correlation between the real measured engine data (blue) and the output of our calibrated Simulink model (yellow), validating the accuracy of our system identification.*
 
-3.  **Controller Synthesis:** With the validated model, I linearized it around a nominal idle speed to create a state-space representation. Based on this linear model, I designed and tuned a multi-variable **LQGI (Linear-Quadratic-Gaussian with Integral action)** controller to manage the throttle and ignition timing outputs.
+3.  [cite_start]**Controller Synthesis:** With the validated model, I linearized it around a nominal idle speed to create a state-space representation.  [cite_start]Based on this linear model, I designed and tuned a multi-variable **LQGI (Linear-Quadratic-Gaussian with Integral action)** controller to manage the throttle and ignition timing outputs.  This process involved significant iteration, where we experimented with and tuned several controller configurations in simulation to achieve the desired balance between responsiveness and stability before selecting the final design.
 
-4.  **Validation & Competition:** The final controller was rigorously tested in simulation against various load disturbances. It was then deployed on the physical engine test bench at the IDSC lab for final validation and to compete against controllers from other teams.
+4.  **Validation & Competition:** The final controller was rigorously tested in simulation against various load disturbances. It was then deployed on the physical engine test bench at the IDSC lab for final validation and to compete against other teams. [cite_start]The competition's cost function was designed to penalize both speed deviations and excessive throttle actuation.  This encouraged the controller to preferably use the faster-reacting ignition timing for small, quick adjustments, which leads to better responsiveness and lower fuel consumption.
 
 ---
 
