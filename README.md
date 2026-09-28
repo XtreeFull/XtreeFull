@@ -52,7 +52,7 @@ Here are some of the projects I've worked on. For more details, please click on 
 
 ## 💼 Experience
 
-* **[ARIS](https://aris-space.ch/) - Engine Testbench CAD and FEM designer** (Oct. 2024 - Present)
+* **[ARIS](https://aris-space.ch/) - Engine Testbench CAD and FEM designer** (Oct. 2024 - Sept. 2025)
 * **[Bastli](https://bastli.ethz.ch/) - ETH Workshop Manager** (Sep. 2023 - Present)
 * **[General Turbo](https://generalturbo.eu/) - Turbine maintenance and testing intern** (Feb. 2022 - Mar. 2022)
 * **[Kremsmüller](https://www.kremsmueller.com/) - Industrial valve maintenance and assembly intern** (Feb. 2017 - Mar. 2017)
